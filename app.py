@@ -1,22 +1,3 @@
-# from flask import Flask, request, jsonify
-# from chatbot import generate_response
-
-# app = Flask(__name__)
-# chat_history = []
-
-# @app.route('/chat', methods=['POST'])
-# def chat():
-#     global chat_history
-#     user_input = request.json.get("message", "")
-#     if not user_input:
-#         return jsonify({"error": "Message cannot be empty"}), 400
-    
-#     response, chat_history = generate_response(user_input, chat_history)
-#     return jsonify({"response": response})
-
-# if __name__ == '__main__':
-#     app.run(debug=True)
-
 from flask import Flask, request, jsonify
 from chatbot import generate_response
 
